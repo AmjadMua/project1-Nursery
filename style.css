@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*   Home page */
+
+
+.homepage video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity:  0.8;
+
+
+}
+.navbar {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(255, 255, 255);
+    padding-left: 70px;
+    padding-right: 70px;
+    z-index: 1;
+
+
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:rgb(59, 34, 34);
+    font-size: 15px;
+}
+.navbar a:hover{
+    color: rgb(179, 179, 0);
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35vh;
+    margin-bottom: 30px;
+    color: white;
+}
+.showcase h1 {
+    font-size: 3em;
+    font-weight: bolder;
+}
+.showcase p {
+    font-size: 20px;
+    font-style: italic;
+    background-color: rgba(53, 31, 31 , 0.7);
+}
+
+
+/*Take a look page */
+
+
+
+.takeallok {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(235, 233, 230, 0.74);  
+}
+.takeallok header {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.takeallok .carousel{
+    align-self: center;
+}
+.takeallok .act {
+    display: flex;
+    align-self: center;
+    margin-top: 30px;
+    background-color: rgba(15, 255, 15, 0.233);
+    padding: 10px;
+}
+.takeallok .activites-card{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr  ;
+   margin: 40px 25%;
+   gap: 20px;
+
+}
+.takeallok .activites-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 350px;
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(100, 109, 61, 0.849);
+    cursor: pointer;
+    transition: 0.5s;
+    top: 0;
+    color: white;
+}
+.takeallok .activites-card .card:hover {
+    background-color: rgba(250, 248, 150, 0.76);
+    color: rgb(184, 0, 0);
+    top: -10px;
+}
+.takeallok .activites-descreption{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+.takeallok .activites-descreption .des-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 65%;
+    margin: 20px 18%;
+    background-color: rgba(131, 131, 131, 0.699);
+}
+.takeallok .activites-descreption .des-card .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 35px;
+}
+.takeallok .activites-descreption h4 {
+    margin: 40px 0;
+    text-transform: uppercase;  
+    font-size: 40px;
+}
+.takeallok .activites-descreption p{
+    font-size: 20px;
+}
+.takeallok .activites-descreption .des-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+/*   aboutus / contact   */
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    align-items: center;
+    background-color: rgba(163, 163, 163, 0.575);
+    padding-top: 30px;
+}
+.aboutus h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.aboutus h4 {
+    color: rgb(30, 26, 51);
+    font-size:20px ;
+    margin-bottom: 20px;
+}
+.aboutus span {
+    color: red;
+    text-shadow: rgba(53, 31, 31 , 0.7);
+    font-weight: bold;
+    font-size: 20px;
+}
+.aboutus p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: flex-start;
+    background-color: rgba(248, 239, 157, 0.575);
+    padding-top: 30px;
+}
+
+.contact h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    align-self: center;
+    
+}
+.contact div {
+    display: flex;
+    flex-direction: row;
+}
+.contact .links{
+    display: flex;
+    list-style: none;
+    margin-right: 200px;
+    margin-left: 100px;
+}
+.contact .links a{
+    position: relative;
+    margin-right: 100px;    
+}
+.contact .links a:hover {
+    top: -15px;
+}
+.contact div .seggution{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.contact .alert{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
